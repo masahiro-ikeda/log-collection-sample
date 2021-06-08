@@ -21,3 +21,8 @@ services:
     image: docker.elastic.co/kibana/kibana:7.2.0
     ports:
       - 15601:5601
+
+# ネットワーク定義
+networks:
+  default:
+    name: log-collection

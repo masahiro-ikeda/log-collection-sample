@@ -7,8 +7,8 @@ services:
       - ./filebeat/var/log/httpd:/var/log/httpd
       - ./filebeat/var/log/nginx:/var/log/nginx
     networks:
-      - elasticsearch_default
+      - log-collection
 
 networks:
-  elasticsearch_default:
+  log-collection:
     external: true
